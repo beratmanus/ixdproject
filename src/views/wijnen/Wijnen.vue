@@ -6,6 +6,10 @@
             <div>
                 <h2>{{wijn.title}}</h2>
                 <p>{{wijn.details}}</p>
+                <p>😂 herkomst</p>
+            </div>
+            <div class="id">
+                {{wijn.id}}
             </div>
         </router-link>
     </div>
@@ -48,7 +52,13 @@ export default {
     img{
         width: 100px;
     }
-    a{
-        display: flex
+    .job a{
+        display: flex;
+        text-decoration: none;
+        color: #444;
+    }
+
+    .id{
+        position: relative;
     }
 </style>
