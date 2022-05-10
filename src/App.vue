@@ -4,12 +4,14 @@
     <router-link :to="{ name: 'About'}">About</router-link> |
     <router-link :to="{ name: 'Wijnen'}">Wijnen</router-link>
     
+    
   </div>
   
   <router-view />
 </template>
 
 <script>
+
 export default {
   methods: {
     redirect() {
