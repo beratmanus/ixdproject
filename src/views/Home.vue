@@ -25,7 +25,7 @@ export default {
 html, body{
   height: 100%;
 }
-body{
+.hero{
   background-color: #1d1d1d;
 }
 .hero img{
