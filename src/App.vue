@@ -5,9 +5,7 @@
     <router-link :to="{ name: 'Wijnen'}">Wijnen</router-link>
     
   </div>
-  <button @click="redirect">Redirect</button>
-  <button @click="back">Go back</button>
-  <button @click="forward">Go forward</button>
+  
   <router-view />
 </template>
 
