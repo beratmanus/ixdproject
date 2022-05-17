@@ -19,19 +19,24 @@ export default {
       hero: hero
     }
   },
+  created() {
+    document.body.style.backgroundColor = "#1d1d1d";
+  },
 }
 </script>
-<style>
+<style scoped>
 html, body{
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 .hero{
-  background-color: #1d1d1d;
 }
 .hero img{
    height: 320px;
    width: 320px !important;
-   text-align: center;
 }
 button{
   width: 348px;
