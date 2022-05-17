@@ -16,17 +16,15 @@
     </div>
 </template>
 
-<script>
+<script> 
 export default {
     data() {
         return {
             wijnen: [
-                { title: 'Santa Tierra', id: 1, details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', img: '/images/santa_tierra.png', regio: "Orvieto, Umbrie", temp: "12.5" },
-                { title: 'Casilerro del Diablo', id: 2, details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',img: '/images/casilerro_del_diablo.png', regio: "Orvieto, Umbrie", temp: "12.5"},
-                { title: 'Mezzacorona', id: 3, details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',img: '/images/mezzacorona.png', regio: "Orvieto, Umbrie", temp: "12.5"},
-                { title: 'Baie Cap', id: 4, details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',img: '/images/baie_cap.png',regio: "Orvieto, Umbrie", temp: "12.5"},
-                { title: 'Les Florets', id: 5, details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',img: '/images/les_florets.png',regio: "Orvieto, Umbrie", temp: "12.5"},              
-            ]
+                { title: 'Fontanella', id: 1, details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', img: '/images/fontanella.png', regio: "Orvieto, Umbrie", temp: "12.5" },
+                { title: 'Panizzi', id: 2, details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',img: '/images/panizzi.png', regio: "Florance, Toscane", temp: "12.5"},
+                { title: 'Tra donne sole', id: 3, details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',img: '/images/tradonnesole.png', regio: "Piémont", temp: "12.5"},
+                { title: 'Tasari', id: 4, details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',img: '/images/tasari.png',regio: "Sicilië", temp: "12.5"},]
         }
     },
 }
