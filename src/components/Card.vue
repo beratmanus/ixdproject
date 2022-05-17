@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="card" @click="this.$router.push('wijnen')">
       <p>flag</p>
       <h1>Italie</h1>
       <p>Wit, rood, rose</p>
