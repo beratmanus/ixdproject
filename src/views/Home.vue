@@ -32,8 +32,7 @@ html, body{
   justify-content: center;
 
 }
-.hero{
-}
+
 .hero img{
    height: 320px;
    width: 320px !important;
