@@ -1,4 +1,5 @@
 <template>
+  <LandingNav></LandingNav>
   <div class="hero"> 
     <img :src="hero" alt="">
     <button>Start de ervaring</button>
@@ -8,11 +9,12 @@
 <script>
 // @ is an alias to /src
 import hero from "../assets/hero.png"
+import LandingNav from "../components/LandingNav";
 
 export default {
   name: 'Home',
   components: {
-    
+    LandingNav
   },
   data() {
     return {
@@ -32,10 +34,10 @@ html, body{
   justify-content: center;
 
 }
-
 .hero img{
    height: 320px;
    width: 320px !important;
+   margin-top: 75px;
 }
 button{
   width: 348px;

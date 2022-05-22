@@ -1,4 +1,4 @@
-<template>
+ <template>
     <h1>Wijnen</h1>
     <div v-for="wijn in wijnen" :key="wijn.id" class="job">
         <router-link :to="{ name: 'WijnDetails', params: { id: wijn.id, title: wijn.title, details: wijn.details, img: wijn.img, bg_img: wijn.bg } }">
