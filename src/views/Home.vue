@@ -2,7 +2,7 @@
   <LandingNav></LandingNav>
   <div class="hero"> 
     <img :src="hero" alt="">
-    <button>Start de ervaring</button>
+    <button>">Start de ervaring</button>
   </div>
 </template>
 
