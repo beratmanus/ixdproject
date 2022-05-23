@@ -3,14 +3,14 @@
   <img class="heading" id="bg" :src="bg_img" alt="wijn background">
   <div class="titles">
     <img id="country" :src="itflag" alt="IT flag">
-    <p>Italië</p>
-    <h3>{{ regio }}</h3>
-    <h1>{{ title }}</h1>
+    <p class="details_p">Italië</p>
+    <h3 class="details_h3">{{ regio }}</h3>
+    <h1 class="details_h1">{{ title }}</h1>
   </div>
   <div class="content">
-    <hr>
+    <hr class="details_hr">
     <div class="buttons">
-      <button class="">Toevoegen aan lijst</button>
+      <button class="details_button">Toevoegen aan lijst</button>
     </div>
   </div>
 </template>
@@ -29,12 +29,12 @@ export default {
 </script>
 
 <style>
-button {
+.details_button {
   border-radius: 12px;
   padding: 18px;
 }
 
-hr {
+.details_hr {
   border: 0.5px rgba(222, 215, 215, 0.4) solid;
   width: 90%;
 }
@@ -72,18 +72,18 @@ hr {
   left: 15px;
 }
 
-p {
+.details_p {
   display: inline-block;
 }
 
-h3 {
+.details_h3 {
   margin: 0;
   padding: 0;
   color: #8c8c8c;
   font-weight: normal;
 }
 
-h1 {
+.details_h1 {
   margin: 0;
   padding: 0;
 }
