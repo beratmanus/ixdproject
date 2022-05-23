@@ -1,7 +1,7 @@
  <template>
     <h1>Wijnen</h1>
     <div v-for="wijn in wijnen" :key="wijn.id" class="job">
-        <router-link :to="{ name: 'WijnDetails', params: { id: wijn.id, title: wijn.title, details: wijn.details, img: wijn.img, bg_img: wijn.bg } }">
+        <router-link :to="{ name: 'WijnDetails', params: { id: wijn.id, title: wijn.title, details: wijn.details, img: wijn.img, bg_img: wijn.bg, regio: wijn.regio } }">
             <img :src="wijn.img" alt="">
             <div>
                 <p>{{wijn.regio}}</p>
@@ -23,8 +23,8 @@ export default {
             wijnen: [
                 { title: 'Fontanella', id: 1, details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', img: '/images/fontanella.png', regio: "Orvieto, Umbrie", temp: "12.5", bg: require('/public/images/fontanella_bg.jpg') },
                 { title: 'Panizzi', id: 2, details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',img: '/images/panizzi.png', regio: "Florance, Toscane", temp: "12.5", bg: require('/public/images/panizzi_bg.jpg')},
-                { title: 'Tra donne sole', id: 3, details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',img: '/images/tradonnesole.png', regio: "Piémont", temp: "12.5", bg: '/public/images/tradonnesole_bg.jpg'},
-                { title: 'Tasari', id: 4, details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',img: '/images/tasari.png',regio: "Sicilië", temp: "12.5", bg: '/public/images/tasari_bg.jpg'}]
+                { title: 'Tra donne sole', id: 3, details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',img: '/images/tradonnesole.png', regio: "Piémont", temp: "12.5", bg: require('/public/images/tradonnesole_bg.jpg')},
+                { title: 'Tasari', id: 4, details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',img: '/images/tasari.png',regio: "Sicilië", temp: "12.5", bg: require('/public/images/tasari_bg.jpg')}]
         }
     },
     created() {
