@@ -9,14 +9,14 @@
   </div>
   <div class="content">
     <hr class="details_hr">
-    <h2>Herkomst</h2>
-    <p>{{details}}</p>
-    <h2>Smaken</h2>
-    <p>{{details}}</p>
-    <h2>In combinatie met</h2>
-    <p>{{details}}</p>
-    <h2>Te serveren temperatuur</h2>
-    <p>{{details}}</p>
+    <h2 class="details_tussentitels">Herkomst</h2>
+    <p class="details_p">{{details}}</p>
+    <h2 class="details_tussentitels">Smaken</h2>
+    <p class="details_p">{{details}}</p>
+    <h2 class="details_tussentitels">In combinatie met</h2>
+    <p class="details_p">{{details}}</p>
+    <h2 class="details_tussentitels">Te serveren temperatuur</h2>
+    <p class="details_p">{{details}}</p>
     <div class="buttons">
       <button class="details_button">Toevoegen aan lijst</button>
     </div>
@@ -39,7 +39,25 @@ export default {
 <style>
 .details_button {
   border-radius: 12px;
-  padding: 18px;
+  padding: 20px;
+  background-color: #5E3333;
+  color: white;
+  width: 90%;
+  height: 65px;
+  font-size: larger;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.details_tussentitels{
+  padding: 0;
+  margin: 25px 0 0;
+}
+
+.details_p{
+  margin: 0;
+  color: #939393;
+  font-weight: lighter;
 }
 
 .details_hr {
@@ -98,6 +116,8 @@ export default {
 
 .content {
   top: 500px;
+  margin-left: 15px;
   margin-top: 425px;
+  text-align: left;
 }
 </style>
