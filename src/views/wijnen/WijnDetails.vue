@@ -3,12 +3,20 @@
   <img class="heading" id="bg" :src="bg_img" alt="wijn background">
   <div class="titles">
     <img id="country" :src="itflag" alt="IT flag">
-    <p class="details_p">Italië</p>
+    <p class="details_titles_p">Italië</p>
     <h3 class="details_h3">{{ regio }}</h3>
     <h1 class="details_h1">{{ title }}</h1>
   </div>
   <div class="content">
     <hr class="details_hr">
+    <h2>Herkomst</h2>
+    <p>{{details}}</p>
+    <h2>Smaken</h2>
+    <p>{{details}}</p>
+    <h2>In combinatie met</h2>
+    <p>{{details}}</p>
+    <h2>Te serveren temperatuur</h2>
+    <p>{{details}}</p>
     <div class="buttons">
       <button class="details_button">Toevoegen aan lijst</button>
     </div>
@@ -67,12 +75,12 @@ export default {
   display: inline;
   float: start;
   text-align: left;
-  position: fixed;
+  position: absolute;
   top: 275px;
   left: 15px;
 }
 
-.details_p {
+.details_titles_p {
   display: inline-block;
 }
 
