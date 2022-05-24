@@ -32,7 +32,12 @@ export default {
       itflag: require("/public/images/IT.png"),
       backfull: require("/public/images/back_fullblack.png")
     }
-  }
+  },
+  methods: {
+    back(){
+      
+    }
+  },
 }
 </script>
 

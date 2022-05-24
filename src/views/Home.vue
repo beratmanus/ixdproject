@@ -2,7 +2,9 @@
   <LandingNav></LandingNav>
   <div class="hero"> 
     <img :src="hero" alt="">
-    <button>Start de ervaring</button>
+    <router-link :to="{name: 'Tables'} ">
+      <button>Start de ervaring</button>
+    </router-link>
   </div>
 </template>
 
