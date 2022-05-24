@@ -2,7 +2,7 @@
   <LandingNav></LandingNav>
   <div class="session"> 
       <h1>#0</h1>
-    <input v-model="sessioncode" placeholder=""/>
+    <input required v-model="sessioncode" placeholder=""/>
   </div>
     <router-link :to="{name: 'Tables'} ">
       <button>Start de ervaring</button>
