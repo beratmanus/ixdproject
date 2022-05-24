@@ -1,16 +1,16 @@
 <template>
   <LandingNav></LandingNav>
-  <div class="hero"> 
-    <img :src="hero" alt="">
-    <router-link :to="{name: 'Number'} ">
+  <div class="session"> 
+      <h1>#0</h1>
+    <input v-model="sessioncode" placeholder=""/>
+  </div>
+    <router-link :to="{name: 'Tables'} ">
       <button>Start de ervaring</button>
     </router-link>
-  </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import hero from "../assets/hero.png"
 import LandingNav from "../components/LandingNav";
 
 export default {
@@ -20,7 +20,7 @@ export default {
   },
   data() {
     return {
-      hero: hero
+      sessioncode: ''
     }
   },
   created() {
@@ -29,6 +29,7 @@ export default {
 }
 </script>
 <style scoped>
+
 html, body{
   height: 100%;
   display: flex;
@@ -36,11 +37,32 @@ html, body{
   justify-content: center;
 
 }
-.hero img{
-   height: 320px;
-   width: 320px !important;
-   margin-top: 75px;
+h1{
+    margin: 0;
+    font-size: 2em;
 }
+
+.session{
+    display: flex;
+    position: absolute;
+    margin-top: 248px;
+    margin-left: 118px;
+    color: #ABABAB;
+
+}
+input{
+    background: #1d1d1d;
+    border: 1px solid #1d1d1d;
+    font-size: 2em;
+    width: 100px;
+    color: #ABABAB;
+      outline: 0;
+  border-width: 0 0 2px;
+  border-color: #ABABAB;
+  font-family: 'Rhoza one', serif;
+  font-weight: bold;
+}
+
 button{
   width: 348px;
   height: 57px;
