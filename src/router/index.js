@@ -4,12 +4,18 @@ import Tables from "../views/Tables.vue";
 import NotFound from "../views/NotFound.vue";
 import Wijnen from "../views/wijnen/Wijnen.vue";
 import WijnDetails from "../views/wijnen/WijnDetails.vue";
+import Number from "../views/Number.vue";
 
 const routes = [
   {
     path: "/",
     name: "Home",
     component: Home,
+  },
+  {
+    path: "/number",
+    name: "Number",
+    component: Number,
   },
   {
     path: "/tables",
