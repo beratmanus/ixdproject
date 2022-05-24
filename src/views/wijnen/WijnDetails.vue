@@ -17,16 +17,20 @@
     <p class="details_p">{{details}}</p>
     <h2 class="details_tussentitels">Te serveren temperatuur</h2>
     <p class="details_p">{{details}}</p>
-    <div class="buttons">
-      <button class="details_button">Toevoegen aan lijst</button>
-    </div>
   </div>
+  <MyModal />
+  
+  
 </template>
 
 <script>
+import MyModal from "@/components/MyModal.vue"
 export default {
   props: ['id', 'title', 'details', 'img', 'bg_img', 'regio']
   ,
+  components:{
+MyModal
+  },
   data() {
     return {
       itflag: require("/public/images/IT.png"),
@@ -34,11 +38,10 @@ export default {
     }
   },
   methods: {
-    back(){
       
     }
-  },
-}
+  }
+
 </script>
 
 <style>
@@ -64,6 +67,7 @@ export default {
   color: #939393;
   font-weight: lighter;
 }
+
 
 .details_hr {
   border: 0.5px rgba(222, 215, 215, 0.4) solid;
