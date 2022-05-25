@@ -1,12 +1,12 @@
 <template>
   <LandingNav></LandingNav>
-  <div class="session"> 
-      <h1>#0</h1>
+  <div class="session">
+    <h1>#0</h1>
     <input required v-model="sessioncode" placeholder=""/>
   </div>
-    <router-link :to="{name: 'Tables'} ">
-      <button>Start de ervaring</button>
-    </router-link>
+  <router-link :to="{name: 'Tables'} ">
+    <button>Start de ervaring</button>
+  </router-link>
 </template>
 
 <script>
@@ -30,40 +30,42 @@ export default {
 </script>
 <style scoped>
 
-html, body{
+html, body {
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 
 }
-h1{
-    margin: 0;
-    font-size: 2em;
+
+h1 {
+  margin: 0;
+  font-size: 2em;
 }
 
-.session{
-    display: flex;
-    position: absolute;
-    margin-top: 248px;
-    margin-left: 118px;
-    color: #ABABAB;
+.session {
+  display: flex;
+  position: absolute;
+  margin-top: 248px;
+  margin-left: 118px;
+  color: #ABABAB;
 
 }
-input{
-    background: #1d1d1d;
-    border: 1px solid #1d1d1d;
-    font-size: 2em;
-    width: 100px;
-    color: #ABABAB;
-      outline: 0;
+
+input {
+  background: #1d1d1d;
+  border: 1px solid #1d1d1d;
+  font-size: 2em;
+  width: 100px;
+  color: #ABABAB;
+  outline: 0;
   border-width: 0 0 2px;
   border-color: #ABABAB;
   font-family: 'Rhoza one', serif;
   font-weight: bold;
 }
 
-button{
+button {
   width: 348px;
   height: 57px;
   background-color: #5E3333;
@@ -72,6 +74,7 @@ button{
   position: absolute;
   left: 10px;
   bottom: 66px;
+  border-radius: 12px;
 }
-  
+
 </style>

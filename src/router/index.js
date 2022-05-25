@@ -5,6 +5,7 @@ import NotFound from "../views/NotFound.vue";
 import Wijnen from "../views/wijnen/Wijnen.vue";
 import WijnDetails from "../views/wijnen/WijnDetails.vue";
 import Number from "../views/Number.vue";
+import QRcode from "../views/QRcode";
 
 const routes = [
   {
@@ -35,8 +36,9 @@ const routes = [
   },
   //redirect 
   {
-    path: "/all-jobs",
-    redirect: "/jobs"
+    path: "/qrcode",
+    name: "QRcode",
+    component: QRcode,
   },
   // 404
   {

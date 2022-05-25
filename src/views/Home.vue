@@ -50,6 +50,7 @@ button{
   position: absolute;
   left: 10px;
   bottom: 66px;
+  border-radius: 12px;
 }
   
 </style>

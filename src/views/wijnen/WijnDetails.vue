@@ -82,14 +82,17 @@ MyModal
 
 #back {
   z-index: 3;
-  margin-top: 50px;
-  margin-left: 15px;
+  margin-top: 65px;
+  margin-left: 25px;
+  width: 45px;
 }
 
 #bg {
   width: 100%;
   height: auto;
   z-index: 1;
+  box-shadow: #171717;
+  border: 1px solid #313131;
 }
 
 #country {
