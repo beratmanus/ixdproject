@@ -102,8 +102,9 @@ h1 {
 .table {
   display: flex;
   flex-wrap: wrap;
-  gap: 25px;
+  gap: 5px;
   margin-left: 2%;
+  margin-top: 45px;
 }
 
 .sessiecode, p {

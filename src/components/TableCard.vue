@@ -30,7 +30,7 @@ export default {
   display: block;
   border: 1px solid rgb(0, 0, 0, 0.1);
   text-align: left;
-  width: 150px;
+  width: 165px;
   height: 184px;
   border-radius: 8px;
   background-color: white;
@@ -38,18 +38,21 @@ export default {
 
 h1 {
   font-size: 24px;
-  padding: 10px;
+  padding: 5px 25px;
   margin: 0;
 }
 
 p {
   font-family: 'Roboto', serif;
   font-size: 16px;
-  padding: 10px;
+  padding: 10px 25px;
   margin: 0;
+  display: block;
+  width: 115px;
 }
 
 img {
+  padding-top: 10px;
   margin: 4px 10px;
   width: 20px;
   height: 20px;
