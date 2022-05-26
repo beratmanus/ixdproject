@@ -6,8 +6,9 @@
     <img id="shoppingbag" class="wijnen_heading_inhoud" :src="shoppingbag" alt="">
   </div>
   <div v-for="wijn in wijnen" :key="wijn.id" class="job">
-    <router-link
-        :to="{ name: 'WijnDetails', params: { id: wijn.id, title: wijn.title, details: wijn.details, img: wijn.img, bg_img: wijn.bg, regio: wijn.regio } }">
+    <router-link id="routerlink"
+                 :to="{ name: 'WijnDetails', params: { id: wijn.id, title: wijn.title, details: wijn.details, img: wijn.img, bg_img: wijn.bg, regio: wijn.regio,
+                                                        temp: wijn.temp} }">
       <img class="wijnen_img" :src="wijn.img" alt="">
       <div>
         <p>{{ wijn.regio }}</p>
@@ -19,17 +20,20 @@
           </svg>
           {{ wijn.temp }}
         </p>
-
       </div>
       <div class="id">
         {{ wijn.id }}
       </div>
     </router-link>
+    <StarModal id="starmodal"/>
   </div>
 </template>
 
 <script>
+import StarModal from "../../components/StarModal";
+
 export default {
+  components: {StarModal},
   data() {
     return {
       wijnen: [
@@ -39,7 +43,7 @@ export default {
           details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
           img: '/images/fontanella.png',
           regio: "Orvieto, Umbrie",
-          temp: "12.5",
+          temp: "10.5",
           bg: require('/public/images/fontanella_bg.jpg')
         },
         {
@@ -57,7 +61,7 @@ export default {
           details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
           img: '/images/tradonnesole.png',
           regio: "Piémont",
-          temp: "12.5",
+          temp: "13.5",
           bg: require('/public/images/tradonnesole_bg.jpg')
         },
         {
@@ -91,6 +95,9 @@ export default {
 </script>
 
 <style scoped>
+.id{
+  display: inline-block;
+}
 .wijnen_heading {
   background-color: white;
   border-bottom-right-radius: 25px;
@@ -164,5 +171,14 @@ body {
   width: 15px;
   padding-right: 5px;
 }
+
+p{
+  display: inline-block;
+}
+
+#routerlink{
+  position: relative;
+}
+
 
 </style>

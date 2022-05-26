@@ -9,14 +9,14 @@
   </div>
   <div class="content">
     <hr class="details_hr">
-    <h2 class="details_tussentitels">Herkomst</h2>
+    <h2 class="details_tussentitels">🌍 Herkomst</h2>
     <p class="details_p">{{details}}</p>
-    <h2 class="details_tussentitels">Smaken</h2>
+    <h2 class="details_tussentitels">😋 Smaken</h2>
     <p class="details_p">{{details}}</p>
-    <h2 class="details_tussentitels">In combinatie met</h2>
+    <h2 class="details_tussentitels">🍷 In combinatie met</h2>
     <p class="details_p">{{details}}</p>
-    <h2 class="details_tussentitels">Te serveren temperatuur</h2>
-    <p class="details_p">{{details}}</p>
+    <h2 class="details_tussentitels">🌡Te serveren temperatuur</h2>
+    <p class="details_p">{{temp}}</p>
   </div>
   <MyModal />
   
@@ -26,7 +26,7 @@
 <script>
 import MyModal from "@/components/MyModal.vue"
 export default {
-  props: ['id', 'title', 'details', 'img', 'bg_img', 'regio']
+  props: ['id', 'title', 'details', 'img', 'bg_img', 'regio', 'herkomst', 'smaken', 'combo', 'temp']
   ,
   components:{
 MyModal

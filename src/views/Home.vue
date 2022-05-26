@@ -1,6 +1,7 @@
+
 <template>
   <LandingNav></LandingNav>
-  <div class="hero"> 
+  <div class="hero">
     <img :src="hero" alt="">
     <router-link :to="{name: 'Number'} ">
       <button>Start de ervaring</button>
@@ -20,28 +21,45 @@ export default {
   },
   data() {
     return {
-      hero: hero
+      hero: hero,
+      scanani: false,
+      disables: false
     }
   },
   created() {
     document.body.style.backgroundColor = "#1d1d1d";
   },
+  methods: {
+    enableani(){
+      this.scanqrbutton_click = true
+      this.disabled = true
+    }
+  },
+  computed: {
+    buttonstyle() {
+      return {
+        backgroundColor: "#ffffff"
+      }
+    }
+  }
 }
 </script>
 <style scoped>
-html, body{
+html, body {
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 
 }
-.hero img{
-   height: 320px;
-   width: 320px !important;
-   margin-top: 75px;
+
+.hero img {
+  height: 320px;
+  width: 320px !important;
+  margin-top: 75px;
 }
-button{
+
+button {
   width: 348px;
   height: 57px;
   background-color: #5E3333;
@@ -52,5 +70,5 @@ button{
   bottom: 66px;
   border-radius: 12px;
 }
-  
+
 </style>
