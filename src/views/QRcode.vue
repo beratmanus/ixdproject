@@ -53,6 +53,9 @@ export default {
   width: 80%;
   margin-top: 75px;
   margin-left: 40px;
+  font-family: gill-sans-nova, sans-serif;
+  font-size: larger;
+
 
   /*justify-content: space-between;
   display: flex;*/
@@ -78,10 +81,14 @@ button {
   padding: 25px;
   border: 1px solid #313131;
   text-align: left;
+  font-family: gill-sans-nova, sans-serif;
+
 }
 
 .wijnen_heading_inhoud {
   display: inline;
+  font-family: gill-sans-nova, sans-serif;
+
 }
 #backbutton {
   width: 12%;

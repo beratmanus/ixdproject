@@ -93,6 +93,8 @@ svg {
 h1, p {
   text-align: left;
   margin-left: 2%;
+  font-family: gill-sans-nova, sans-serif;
+
 }
 
 h1 {
@@ -105,12 +107,15 @@ h1 {
   gap: 5px;
   margin-left: 2%;
   margin-top: 45px;
+  font-family: gill-sans-nova, sans-serif;
+
 }
 
 .sessiecode, p {
-  font-family: 'Roboto', serif;
   font-weight: 400;
-  color: #ABABAB;
+  color: #696969;
+  font-family: gill-sans-nova, sans-serif;
+
 }
 
 .sessiecode span {

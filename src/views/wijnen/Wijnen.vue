@@ -8,7 +8,7 @@
   <div v-for="wijn in wijnen" :key="wijn.id" class="job">
     <router-link id="routerlink"
                  :to="{ name: 'WijnDetails', params: { id: wijn.id, title: wijn.title, details: wijn.details, img: wijn.img, bg_img: wijn.bg, regio: wijn.regio,
-                                                        temp: wijn.temp} }">
+                                                        temp: wijn.temp, herkomst: wijn.herkomst, smaken: wijn.smaken, combo: wijn.combo} }">
       <img class="wijnen_img" :src="wijn.img" alt="">
       <div>
         <p>{{ wijn.regio }}</p>
@@ -43,8 +43,11 @@ export default {
           details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
           img: '/images/fontanella.png',
           regio: "Orvieto, Umbrie",
-          temp: "10.5",
-          bg: require('/public/images/fontanella_bg.jpg')
+          temp: "12.5°C",
+          bg: require('/public/images/fontanella_bg.jpg'),
+          herkomst: "Wijn van een blend van de druivenrassen Sangiovese en Merlot, uit Ombrië van de Wijnmakerij Goretti.",
+          smaken: "Rosé wijn",
+          combo: "Deze wijn gaat over het algemeen goed samen met varkensvlees, gevogelte of beef."
         },
         {
           title: 'Panizzi',
@@ -52,8 +55,11 @@ export default {
           details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
           img: '/images/panizzi.png',
           regio: "Florance, Toscane",
-          temp: "12.5",
-          bg: require('/public/images/panizzi_bg.jpg')
+          temp: "7-12°C",
+          bg: require('/public/images/panizzi_bg.jpg'),
+          herkomst: "Afkomstig uit Toscane, is deze witte druif ook de druif van de Toscaanse regionale wijn met dezelfde naam.",
+          smaken: "Witte wijn. De wijnen zijn helder, citrusachtig en crisp en geven een lichte bittere noot als nasmaak.",
+          combo: "Combineer dit met wit vlees of vis, maar ook met kruiden- en hartige sauzen om de kruidige tonen van de wijn naar voren te brengen."
         },
         {
           title: 'Tra donne sole',
@@ -61,8 +67,11 @@ export default {
           details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
           img: '/images/tradonnesole.png',
           regio: "Piémont",
-          temp: "13.5",
-          bg: require('/public/images/tradonnesole_bg.jpg')
+          temp: "10°C",
+          bg: require('/public/images/tradonnesole_bg.jpg'),
+          herkomst: "Een witte wijn uit Piemonte, Italië. Gemaakt van Chardonnay, Sauvignon Blanc druiven.",
+          smaken: "Noord-Italische witte wijn. Droog en citrus.",
+          combo: "Past goed bij vis, oude kaas en geprocesseerd vlees."
         },
         {
           title: 'Tasari',
@@ -70,8 +79,11 @@ export default {
           details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
           img: '/images/tasari.png',
           regio: "Sicilië",
-          temp: "12.5",
-          bg: require('/public/images/tasari_bg.jpg')
+          temp: "18-20°C",
+          bg: require('/public/images/tasari_bg.jpg'),
+          herkomst: "Kersenkleurig met een intens fruitig boeket dat afkomstig is van syrah-druiven",
+          smaken: "Rode wijn. Hinten van aardbei, kers, framboos en granaatappel. In de mond is de wijn fris met een goede zuurgraad en evenwichtige tannines.",
+          combo: "Als het vers wordt geserveerd, is het de perfecte match voor lichte lunches op basis van salades en de meest veeleisende gegrilde diners."
         },
         {
           title: 'Santa Cristina',
@@ -79,8 +91,11 @@ export default {
           details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
           img: '/images/santacristina.png',
           regio: "Toscane",
-          temp: "12.5",
-          bg: require('/public/images/santacristina_bg.jpg')
+          temp: "6-10°C",
+          bg: require('/public/images/santacristina_bg.jpg'),
+          herkomst: "Sinds 1946 in Cortona, hernieuwt Santa Cristina de traditie van wijnen met een geweldig karakter die onmiddellijk na het bottelen kunnen worden geconsumeerd, evenals een selectie van verfijnde klassiekers en unieke Toscaanse specialiteiten.",
+          smaken: "Fris, fruitig, aroma's van grapefruit en wilde aardbei. De smaak is goed uitgebalanceerd, zacht, geurig met een fruitige afdronk.",
+          combo: "Gaat goed samen met vis en milde kazen."
         }]
       ,
       ITflag: require("/public/images/IT.png"),
@@ -107,6 +122,8 @@ export default {
   padding: 25px;
   border: 1px solid #c0c0c0;
   text-align: left;
+  font-family: gill-sans-nova, sans-serif;
+
 }
 
 .wijnen_heading_inhoud {
@@ -140,6 +157,8 @@ body {
   cursor: pointer;
   text-align: left;
   margin: 25px auto 10px;
+  font-family: gill-sans-nova, sans-serif;
+
 }
 
 .job h2, p {

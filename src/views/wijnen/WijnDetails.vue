@@ -10,26 +10,27 @@
   <div class="content">
     <hr class="details_hr">
     <h2 class="details_tussentitels">🌍 Herkomst</h2>
-    <p class="details_p">{{details}}</p>
+    <p class="details_p">{{ herkomst }}</p>
     <h2 class="details_tussentitels">😋 Smaken</h2>
-    <p class="details_p">{{details}}</p>
+    <p class="details_p">{{ smaken }}</p>
     <h2 class="details_tussentitels">🍷 In combinatie met</h2>
-    <p class="details_p">{{details}}</p>
+    <p class="details_p">{{ combo }}</p>
     <h2 class="details_tussentitels">🌡Te serveren temperatuur</h2>
-    <p class="details_p">{{temp}}</p>
+    <p class="details_p">{{ temp }}</p>
   </div>
-  <MyModal />
-  
-  
+  <MyModal/>
+
+
 </template>
 
 <script>
 import MyModal from "@/components/MyModal.vue"
+
 export default {
   props: ['id', 'title', 'details', 'img', 'bg_img', 'regio', 'herkomst', 'smaken', 'combo', 'temp']
   ,
-  components:{
-MyModal
+  components: {
+    MyModal
   },
   data() {
     return {
@@ -37,14 +38,14 @@ MyModal
       backfull: require("/public/images/back_fullblack.png")
     }
   },
-  methods: {
-      
-    }
-  }
+  methods: {}
+}
 
 </script>
 
 <style>
+@import url("https://use.typekit.net/vur1mlv.css");
+
 .details_button {
   border-radius: 12px;
   padding: 20px;
@@ -57,15 +58,19 @@ MyModal
   margin-bottom: 35px;
 }
 
-.details_tussentitels{
+.details_tussentitels {
   padding: 0;
   margin: 25px 0 0;
+  font-family: gill-sans-nova, sans-serif;
+  font-weight: 600;
 }
 
-.details_p{
+.details_p {
   margin: 0;
-  color: #939393;
-  font-weight: lighter;
+  color: #5e5e5e;
+  padding: 10px 25px 0 5px;
+  font-family: gill-sans-nova, sans-serif;
+  font-weight: 500;
 }
 
 
@@ -119,11 +124,15 @@ MyModal
   padding: 0;
   color: #8c8c8c;
   font-weight: normal;
+  font-family: gill-sans-nova, sans-serif;
+
 }
 
 .details_h1 {
   margin: 0;
   padding: 0;
+  font-family: gill-sans-nova, sans-serif;
+
 }
 
 .content {

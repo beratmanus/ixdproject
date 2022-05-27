@@ -41,7 +41,8 @@ export default {
 }
 
 .modal p{
-  padding: 0 25px 0 30px;
+  padding: 0 25px 0 45px;
+  font-weight: 550;
 }
 h4{
   padding-top: 25px;
