@@ -176,6 +176,7 @@ p{
 }
 .amount p {
     margin: 20px;
+    font-size: 20px;
 }
 
 </style>
