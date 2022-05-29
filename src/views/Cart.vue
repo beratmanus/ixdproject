@@ -105,7 +105,7 @@ export default {
 
 #backbutton {
     position: absolute;
-  width: 12%;
+  width: 10.5%;
   margin-top: 40px;
   margin-right: 80px;
 }

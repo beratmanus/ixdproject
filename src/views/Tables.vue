@@ -19,7 +19,7 @@
           </clipPath>
         </defs>
       </svg>
-      <img id="shoppingbag" class="wijnen_heading_inhoud" :src="shoppingbag" alt="">
+      <router-link :to="{name: 'Cart'} "><img id="shoppingbag" class="wijnen_heading_inhoud" :src="shoppingbag" alt=""></router-link>
     </div>
   </header>
   <div class="about">
