@@ -1,6 +1,6 @@
 <template>
   <div class="wijnen_heading">
-    <img id="backbutton" class="wijnen_heading_inhoud" :src="backstroke" alt="" @click="this.$router.back()">
+    <img id="backbutton" class="wijnen_heading_inhoud" :src="backstroke" alt="" @click="$router.go(-2)">
     <img id="flag" class="wijnen_heading_inhoud" :src="ITflag" alt="">
     <h1 id="wijnen_heading_h1" class="wijnen_heading_inhoud">Italië</h1>
     <img id="shoppingbag" class="wijnen_heading_inhoud" :src="shoppingbag" alt="">
