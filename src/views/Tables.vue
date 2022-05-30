@@ -25,7 +25,7 @@
   <div class="about">
     <p class="sessiecode"><span>#032</span> Sessiecode</p>
     <div>
-      <h1>Welkom, Dries</h1>
+      <h1>Welkom, Nicolas</h1>
       <p>Start jouw ervaring <br> bij tafel naar keuze</p>
     </div>
     <router-link :to="{name: 'QRcode'}">

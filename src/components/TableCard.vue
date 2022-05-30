@@ -12,9 +12,9 @@ export default {
   data() {
     return {
       tables: [
-        {flag: "/images/IT.png", country: 'Italie', soorten: 'Wit, Rood, Rose', aantal: 10},
-        {flag: '/images/FR.png', country: 'Frankrijk', soorten: 'Wit, Rose', aantal: 12},
-        {flag: '/images/CH.png', country: 'Chili', soorten: 'Rood, Rose', aantal: 8},
+        {flag: "/images/IT.png", country: 'Italië', soorten: 'Wit, Rood, Rosé', aantal: 10},
+        {flag: '/images/FR.png', country: 'Frankrijk', soorten: 'Wit, Rosé', aantal: 12},
+        {flag: '/images/CH.png', country: 'Chili', soorten: 'Rood, Rosé', aantal: 8},
         {flag: '/images/SA.png', country: 'Afrika', soorten: 'Wit, Rood', aantal: 6},
       ],
 

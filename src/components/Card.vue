@@ -1,7 +1,7 @@
 <template>
   <div class="card" @click="this.$router.push('wijnen')">
     <p>flag</p>
-    <h1>Italie</h1>
+    <h1>Italië</h1>
     <p>Wit, rood, rose</p>
     <p>0/10 wijnen</p>
   </div>
