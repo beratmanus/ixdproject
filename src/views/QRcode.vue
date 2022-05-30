@@ -67,9 +67,8 @@ button {
   background-color: #5E3333;
   color: #fff;
   font-size: 18px;
-  position: absolute;
-  left: 10px;
-  bottom: 66px;
+  margin-top: 50px;
+  margin-bottom: 15px;
   border-radius: 12px;
 }
 .wijnen_heading {
