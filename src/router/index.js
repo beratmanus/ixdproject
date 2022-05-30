@@ -7,6 +7,8 @@ import WijnDetails from "../views/wijnen/WijnDetails.vue";
 import Number from "../views/Number.vue";
 import QRcode from "../views/QRcode";
 import Cart from "../views/Cart.vue";
+import Bevestigen from "../views/Bevestigen.vue";
+import End from "../views/End.vue";
 
 const routes = [
   {
@@ -40,6 +42,17 @@ const routes = [
     name: "Cart",
     component: Cart
   },
+  {
+    path: "/bevestigen",
+    name: "Bevestigen",
+    component: Bevestigen
+  },
+  {
+    path: "/end",
+    name: "End",
+    component: End
+  },
+
   //redirect 
   {
     path: "/qrcode",

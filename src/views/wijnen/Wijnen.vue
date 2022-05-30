@@ -3,7 +3,7 @@
     <img id="backbutton" class="wijnen_heading_inhoud" :src="backstroke" alt="" @click="$router.go(-2)">
     <img id="flag" class="wijnen_heading_inhoud" :src="ITflag" alt="">
     <h1 id="wijnen_heading_h1" class="wijnen_heading_inhoud">Italië</h1>
-    <router-link :to="{name: 'Cart'} "><img id="shoppingbag" class="wijnen_heading_inhoud" :src="shoppingbag" alt=""></router-link>
+  <router-link :to="{ name: 'Cart'}" ><img id="shoppingbag" class="wijnen_heading_inhoud" :src="shoppingbag" alt=""></router-link>  
   </div>
   <div v-for="wijn in wijnen" :key="wijn.id" class="job">
     <router-link id="routerlink"
